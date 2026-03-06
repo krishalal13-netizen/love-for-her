@@ -1,25 +1,47 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-<title>For Nandini ❤️</title>
+<title>For Nandini 💖</title>
 
 <style>
 
 body{
 font-family: Arial;
-background:#ffe6f2;
+background:linear-gradient(#ffe6f2,#ffd6ec);
 text-align:center;
 margin:0;
 overflow-x:hidden;
 }
 
+/* sparkle background */
+
+body::before{
+content:"✨ ✨ ✨ ✨ ✨ ✨";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+font-size:25px;
+opacity:0.15;
+pointer-events:none;
+animation:sparkle 8s linear infinite;
+}
+
+@keyframes sparkle{
+0%{transform:translateY(0)}
+100%{transform:translateY(-100px)}
+}
+
 .section{
-padding:110px 20px;
+padding:100px 20px;
 max-width:800px;
 margin:auto;
 opacity:0;
 transform:translateY(40px);
-transition:all 1s;
+transition:1s;
 }
 
 .section.show{
@@ -28,62 +50,50 @@ transform:translateY(0);
 }
 
 h1{
+font-size:42px;
 color:#ff2e63;
 }
 
 p{
-font-size:20px;
-line-height:1.8;
-min-height:40px;
+font-size:19px;
+line-height:1.7;
 }
 
-.gallery img{
-width:260px;
-margin:12px;
-border-radius:15px;
-box-shadow:0 6px 20px rgba(0,0,0,0.2);
+img{
+width:250px;
+border-radius:20px;
+margin:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+opacity:0;
+transform:scale(0.9);
+transition:1s;
+}
+
+img.show{
+opacity:1;
+transform:scale(1);
 }
 
 button{
-padding:15px 30px;
-font-size:20px;
-border:none;
-border-radius:10px;
-margin:10px;
-cursor:pointer;
-}
-
-.play{
-background:#ff2e63;
-color:white;
-}
-
-.yes{
-background:#ff2e63;
-color:white;
-}
-
-.no{
-background:white;
-}
-
-.scroll{
+padding:12px 25px;
 font-size:18px;
-opacity:0.7;
-margin-top:20px;
-animation:float 2s infinite;
+border:none;
+border-radius:25px;
+background:#ff2e63;
+color:white;
+cursor:pointer;
+margin:10px;
 }
 
-@keyframes float{
-0%{transform:translateY(0)}
-50%{transform:translateY(10px)}
-100%{transform:translateY(0)}
+button:hover{
+background:#ff4f81;
 }
+
+/* floating hearts */
 
 .heart{
 position:fixed;
 top:-10px;
-color:red;
 font-size:24px;
 animation:fall linear infinite;
 }
@@ -95,58 +105,92 @@ transform:translateY(110vh);
 }
 
 </style>
+
 </head>
 
 <body>
+
 <audio id="song" src="song.mp3"></audio>
+
 <div class="section show">
 
-<h1>Nandini ❤️</h1>
+<h1>Nandini 💖</h1>
 
-<p class="type">Before you read this...</p>
+<p class="type">Before you read this… 🥺💌</p>
 
-<p class="type">Press this so our song plays while you read.</p>
+<p class="type">Press this so our song plays while you read 🎶💞</p>
 
-<button class="play" onclick="document.getElementById('song').play()">Play our song 🎵</button>
-<div class="scroll">scroll down ↓</div>
-
-</div>
-
-<iframe id="song" width="0" height="0" src="" allow="autoplay"></iframe>
-
-<div class="section">
-
-<p class="type">
-Sometimes life surprises you with someone you didn’t know you needed.
-</p>
-
-<p class="type">
-For me, that person was you.
-</p>
-
-<p class="type">
-I never expected to meet someone this special again, especially on a dating app.
-But then you appeared… and somehow everything just clicked.
-</p>
+<button onclick="playMusic()">Play our song 🎵</button>
 
 </div>
 
 <div class="section">
 
 <p class="type">
-From the very first conversation, something about you felt easy.
-Like we didn’t have to force anything… we just understood each other.
-</p>
 
-<p class="type">
-And with every day that passes, I feel like we keep learning more about each other and growing closer.
+Hey my love 💕
+
+I never thought I'd actually meet someone like you again…
+especially from a random dating app 🥹
+
+But then you showed up…
+and somehow we just clicked instantly ❤️
+
+And every day since then
+we've been learning more about each other
+and growing closer 💞
+
 </p>
 
 </div>
 
-<div class="section gallery">
+<div class="section">
 
-<h1>My favorite pictures of you</h1>
+<p class="type">
+
+I adore your stupid humor 🤭💕
+I love that little laugh of yours 🥹💖
+I love the way you are as a person ✨
+
+And I know you once told me
+sometimes when things get tough
+you push people away 💭
+
+But now that I'm here…
+
+You can feel safe with me 🫶
+I'm not going anywhere 💞
+
+</p>
+
+</div>
+
+<div class="section">
+
+<p class="type">
+
+Lately you've been appearing in my dreams a lot 🌙✨
+and honestly… I like that 🥹
+
+I keep imagining all the little things we could do together 💖
+
+Gaming nights 🎮
+Movie nights 🍿
+Watching sunsets 🌅
+Me cooking for you when you're hungry 🍜
+Annoying you just a little too much 😝
+
+and making a million memories together 💞
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h1>This is exactly why I'm in love with you 😫🤌🏻💖</h1>
+
+<p>Woman… your smile 🥹💕</p>
 
 <img src="photo1.jpg">
 <img src="photo2.jpg">
@@ -157,116 +201,56 @@ And with every day that passes, I feel like we keep learning more about each oth
 <div class="section">
 
 <p class="type">
-I adore your stupid humor. It's chaotic… and it somehow always makes me smile.
-</p>
 
-<p class="type">I love your little laugh.</p>
+I know you said we should take things slow 💭
 
-<p class="type">I love the way you are as a person.</p>
+But we've reached a point where
+we say “I love you” to each other ❤️
 
-<p class="type">And I love you exactly the way you are.</p>
+And I don't say that lightly.
+I only say that to you 💞
 
-</div>
+And last night when I fell asleep on call
+and asked you not to leave…
 
-<div class="section">
+You stayed 🥺
 
-<p class="type">
-I know you once told me that when things get difficult, you sometimes push people away.
-</p>
+That small moment made me feel
+so safe and secure 💖
 
-<p class="type">
-But now that I'm here, you don't have to go through things alone anymore.
-</p>
-
-<p class="type">
-I'm here, and I'm not going anywhere.
 </p>
 
 </div>
 
 <div class="section">
 
-<p class="type">Lately you've been appearing in my dreams a lot.</p>
-
-<p class="type">And honestly… I really like that.</p>
-
-</div>
-
-<div class="section">
-
-<p class="type">I want to share so many little moments with you.</p>
+<h1 class="type">So here's the big question… 🥺💌</h1>
 
 <p class="type">
-Late-night gaming together. Cooking for you whenever you're hungry.
-Watching sunsets. Movie nights.
-Irritating you way too much.
-And creating a million memories.
+
+Long distance can feel scary sometimes 🌙
+
+But somehow… it doesn't feel scary with you 💞
+
+Nandini…
+
+Would you do the honor
+of being my girlfriend? 💖
+
 </p>
 
-</div>
-
-<div class="section">
-
-<p class="type">
-We reached a point where we say “I love you” to each other.
-</p>
-
-<p class="type">
-And I don't say those words lightly. I only say them to you.
-</p>
-
-</div>
-
-<div class="section">
-
-<p class="type">
-Last night when I fell asleep on call with you, I asked you not to leave.
-</p>
-
-<p class="type">And you stayed.</p>
-
-<p class="type">
-That small moment made me feel incredibly safe and secure.
-</p>
-
-</div>
-
-<div class="section">
-
-<p class="type">I want to make you feel safe.</p>
-
-<p class="type">I want to make you feel loved.</p>
-
-<p class="type">And I want to be someone you can always rely on.</p>
-
-<p class="type">I'm going to love you unconditionally.</p>
-
-</div>
-
-<div class="section">
-
-<p class="type">
-Long distance can feel scary sometimes.
-</p>
-
-<p class="type">
-But somehow… with you, it doesn't feel scary at all.
-</p>
-
-<h1>So Nandini…</h1>
-
-<h1>Will you be my girlfriend? ❤️</h1>
-
-<button class="yes" onclick="yes()">YES</button>
-<button class="no" onclick="move()">NO</button>
+<button onclick="yes()">Yes 💖</button> <button class="no" onmouseover="move()">No 🙈</button>
 
 </div>
 
 <script>
 
 function playMusic(){
-document.getElementById("song").src="https://www.youtube.com/embed/8h1Yy0uH2N0?autoplay=1&loop=1&playlist=8h1Yy0uH2N0";
+document.getElementById("song").play();
 }
+
+
+/* typing effect */
 
 function typeWriter(element,text,i=0){
 if(i<text.length){
@@ -278,42 +262,100 @@ setTimeout(()=>typeWriter(element,text,i+1),30);
 document.querySelectorAll(".type").forEach(el=>{
 let text=el.innerText;
 el.innerText="";
-setTimeout(()=>typeWriter(el,text),500);
+setTimeout(()=>typeWriter(el,text),400);
 });
+
+
+/* floating hearts */
 
 function createHeart(){
 const heart=document.createElement("div");
-heart.classList.add("heart");
-heart.innerHTML="❤️";
+heart.className="heart";
+heart.innerHTML="💖";
 heart.style.left=Math.random()*100+"vw";
-heart.style.animationDuration=(Math.random()*3+2)+"s";
+heart.style.animationDuration=(Math.random()*3+3)+"s";
 document.body.appendChild(heart);
 
-setTimeout(()=>{heart.remove();},5000);
+setTimeout(()=>{
+heart.remove();
+},6000);
 }
 
-function yes(){
-document.body.innerHTML="<h1>Nandini ❤️</h1><h2>You just made Kira the happiest person alive.</h2><p>I promise I'll keep making you smile.</p>";
-setInterval(createHeart,200);
-}
+setInterval(createHeart,300);
 
-function move(){
-var button=document.querySelector('.no');
-button.style.position='absolute';
-button.style.top=Math.random()*80+'%';
-button.style.left=Math.random()*80+'%';
-}
 
-const sections=document.querySelectorAll('.section');
+/* show sections on scroll */
 
-window.addEventListener('scroll',()=>{
+const sections=document.querySelectorAll(".section");
+
+window.addEventListener("scroll",()=>{
 sections.forEach(sec=>{
 const top=sec.getBoundingClientRect().top;
 if(top<window.innerHeight-100){
-sec.classList.add('show');
+sec.classList.add("show");
 }
 });
 });
+
+
+/* show images on scroll */
+
+const images=document.querySelectorAll("img");
+
+window.addEventListener("scroll",()=>{
+images.forEach(img=>{
+const top=img.getBoundingClientRect().top;
+if(top<window.innerHeight-50){
+img.classList.add("show");
+}
+});
+});
+
+
+/* yes button */
+
+function yes(){
+
+document.body.innerHTML=`
+
+<h1>💖 Nandini!!! 💖</h1>
+
+<h2>You just made Kira the happiest person alive 🥹❤️</h2>
+
+<p style="font-size:22px">
+
+Thank you for choosing me 💞  
+
+I promise I'll keep making you smile,  
+annoy you in the cutest ways,  
+and love you with my whole heart 💖✨  
+
+More gaming nights 🎮  
+More movie nights 🍿  
+More late night talks 🌙  
+More memories waiting for us 💕  
+
+I love you Nandini 💖  
+— Yours, Kira 🫶  
+
+</p>
+
+`;
+
+setInterval(createHeart,150);
+
+}
+
+
+/* no button runs away */
+
+function move(){
+var button=document.querySelector(".no");
+
+button.style.position="absolute";
+button.style.top=Math.random()*80+"%";
+button.style.left=Math.random()*80+"%";
+}
 
 </script>
 
