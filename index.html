@@ -98,7 +98,7 @@ transform:translateY(110vh);
 </head>
 
 <body>
-
+<audio id="song" src="song.mp3"></audio>
 <div class="section show">
 
 <h1>Nandini ❤️</h1>
@@ -107,8 +107,7 @@ transform:translateY(110vh);
 
 <p class="type">Press this so our song plays while you read.</p>
 
-<button class="play" onclick="playMusic()">Play our song 🎵</button>
-
+<button class="play" onclick="document.getElementById('song').play()">Play our song 🎵</button>
 <div class="scroll">scroll down ↓</div>
 
 </div>
