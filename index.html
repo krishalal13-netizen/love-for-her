@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -15,10 +14,10 @@ margin:0;
 overflow-x:hidden;
 }
 
-/* sparkle background */
+/* sparkles */
 
 body::before{
-content:"✨ ✨ ✨ ✨ ✨ ✨";
+content:"✨ ✨ ✨ ✨ ✨ ✨ ✨ ✨";
 position:fixed;
 top:0;
 left:0;
@@ -34,6 +33,8 @@ animation:sparkle 8s linear infinite;
 0%{transform:translateY(0)}
 100%{transform:translateY(-100px)}
 }
+
+/* sections */
 
 .section{
 padding:100px 20px;
@@ -74,6 +75,8 @@ opacity:1;
 transform:scale(1);
 }
 
+/* buttons */
+
 button{
 padding:12px 25px;
 font-size:18px;
@@ -105,7 +108,6 @@ transform:translateY(110vh);
 }
 
 </style>
-
 </head>
 
 <body>
@@ -128,38 +130,17 @@ transform:translateY(110vh);
 
 <p class="type">
 
-Hey my love 💕
+Hey my love 💕  
 
-I never thought I'd actually meet someone like you again…
-especially from a random dating app 🥹
+I never thought I'd meet someone like you again…  
+especially from a random dating app 🥹  
 
-But then you showed up…
-and somehow we just clicked instantly ❤️
+But then you showed up…  
+and somehow we clicked instantly ❤️  
 
-And every day since then
-we've been learning more about each other
-and growing closer 💞
-
-</p>
-
-</div>
-
-<div class="section">
-
-<p class="type">
-
-I adore your stupid humor 🤭💕
-I love that little laugh of yours 🥹💖
-I love the way you are as a person ✨
-
-And I know you once told me
-sometimes when things get tough
-you push people away 💭
-
-But now that I'm here…
-
-You can feel safe with me 🫶
-I'm not going anywhere 💞
+And every day since then  
+we’ve been growing closer  
+and learning more about each other 💞  
 
 </p>
 
@@ -169,18 +150,38 @@ I'm not going anywhere 💞
 
 <p class="type">
 
-Lately you've been appearing in my dreams a lot 🌙✨
-and honestly… I like that 🥹
+I love your stupid humor 🤭💕  
+I love that little laugh of yours 🥹💖  
+I love the way you are as a person ✨  
 
-I keep imagining all the little things we could do together 💖
+You once told me sometimes  
+when things get tough you push people away 💭  
 
-Gaming nights 🎮
-Movie nights 🍿
-Watching sunsets 🌅
-Me cooking for you when you're hungry 🍜
-Annoying you just a little too much 😝
+But now that I'm here…  
 
-and making a million memories together 💞
+You can feel safe with me 🫶  
+I'm not going anywhere 💞  
+
+</p>
+
+</div>
+
+<div class="section">
+
+<p class="type">
+
+Lately you've been appearing in my dreams a lot 🌙✨  
+and honestly… I like that 🥹  
+
+I keep imagining all the little things we could do together 💖  
+
+Gaming nights 🎮  
+Movie nights 🍿  
+Watching sunsets 🌅  
+Me cooking for you when you're hungry 🍜  
+Annoying you just a little too much 😝  
+
+and making so many memories together 💞  
 
 </p>
 
@@ -202,21 +203,21 @@ and making a million memories together 💞
 
 <p class="type">
 
-I know you said we should take things slow 💭
+I know you said we should take things slow 💭  
 
-But we've reached a point where
-we say “I love you” to each other ❤️
+But we've already reached a point  
+where we say "I love you" to each other ❤️  
 
-And I don't say that lightly.
-I only say that to you 💞
+And I don’t say that lightly.  
+I only say that to you 💞  
 
-And last night when I fell asleep on call
-and asked you not to leave…
+And last night when I fell asleep on call  
+and asked you not to leave…  
 
-You stayed 🥺
+You stayed 🥺  
 
-That small moment made me feel
-so safe and secure 💖
+That moment made me feel  
+so safe and secure 💖  
 
 </p>
 
@@ -228,18 +229,19 @@ so safe and secure 💖
 
 <p class="type">
 
-Long distance can feel scary sometimes 🌙
+Long distance can be scary sometimes 🌙  
 
-But somehow… it doesn't feel scary with you 💞
+But somehow… it doesn’t feel scary with you 💞  
 
-Nandini…
+Nandini…  
 
-Would you do the honor
-of being my girlfriend? 💖
+Would you do the honor  
+of being my girlfriend? 💖  
 
 </p>
 
-<button onclick="yes()">Yes 💖</button> <button class="no" onmouseover="move()">No 🙈</button>
+<button onclick="yes()">Yes 💖</button>
+<button class="no" onmouseover="move()">No 🙈</button>
 
 </div>
 
@@ -248,7 +250,6 @@ of being my girlfriend? 💖
 function playMusic(){
 document.getElementById("song").play();
 }
-
 
 /* typing effect */
 
@@ -264,7 +265,6 @@ let text=el.innerText;
 el.innerText="";
 setTimeout(()=>typeWriter(el,text),400);
 });
-
 
 /* floating hearts */
 
@@ -283,8 +283,7 @@ heart.remove();
 
 setInterval(createHeart,300);
 
-
-/* show sections on scroll */
+/* show sections */
 
 const sections=document.querySelectorAll(".section");
 
@@ -297,8 +296,7 @@ sec.classList.add("show");
 });
 });
 
-
-/* show images on scroll */
+/* show images */
 
 const images=document.querySelectorAll("img");
 
@@ -310,7 +308,6 @@ img.classList.add("show");
 }
 });
 });
-
 
 /* yes button */
 
@@ -345,7 +342,6 @@ I love you Nandini 💖
 setInterval(createHeart,150);
 
 }
-
 
 /* no button runs away */
 
