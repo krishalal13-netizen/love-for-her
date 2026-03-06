@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Nandini ❤️</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#ffe6f2;
+text-align:center;
+margin:0;
+overflow-x:hidden;
+}
+
+.section{
+padding:110px 20px;
+max-width:800px;
+margin:auto;
+opacity:0;
+transform:translateY(40px);
+transition:all 1s;
+}
+
+.section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+h1{
+color:#ff2e63;
+}
+
+p{
+font-size:20px;
+line-height:1.8;
+min-height:40px;
+}
+
+.gallery img{
+width:260px;
+margin:12px;
+border-radius:15px;
+box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+
+button{
+padding:15px 30px;
+font-size:20px;
+border:none;
+border-radius:10px;
+margin:10px;
+cursor:pointer;
+}
+
+.play{
+background:#ff2e63;
+color:white;
+}
+
+.yes{
+background:#ff2e63;
+color:white;
+}
+
+.no{
+background:white;
+}
+
+.scroll{
+font-size:18px;
+opacity:0.7;
+margin-top:20px;
+animation:float 2s infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(10px)}
+100%{transform:translateY(0)}
+}
+
+.heart{
+position:fixed;
+top:-10px;
+color:red;
+font-size:24px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="section show">
+
+<h1>Nandini ❤️</h1>
+
+<p class="type">Before you read this...</p>
+
+<p class="type">Press this so our song plays while you read.</p>
+
+<button class="play" onclick="playMusic()">Play our song 🎵</button>
+
+<div class="scroll">scroll down ↓</div>
+
+</div>
+
+<iframe id="song" width="0" height="0" src="" allow="autoplay"></iframe>
+
+<div class="section">
+
+<p class="type">
+Sometimes life surprises you with someone you didn’t know you needed.
+</p>
+
+<p class="type">
+For me, that person was you.
+</p>
+
+<p class="type">
+I never expected to meet someone this special again, especially on a dating app.
+But then you appeared… and somehow everything just clicked.
+</p>
+
+</div>
+
+<div class="section">
+
+<p class="type">
+From the very first conversation, something about you felt easy.
+Like we didn’t have to force anything… we just understood each other.
+</p>
+
+<p class="type">
+And with every day that passes, I feel like we keep learning more about each other and growing closer.
+</p>
+
+</div>
+
+<div class="section gallery">
+
+<h1>My favorite pictures of you</h1>
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+
+</div>
+
+<div class="section">
+
+<p class="type">
+I adore your stupid humor. It's chaotic… and it somehow always makes me smile.
+</p>
+
+<p class="type">I love your little laugh.</p>
+
+<p class="type">I love the way you are as a person.</p>
+
+<p class="type">And I love you exactly the way you are.</p>
+
+</div>
+
+<div class="section">
+
+<p class="type">
+I know you once told me that when things get difficult, you sometimes push people away.
+</p>
+
+<p class="type">
+But now that I'm here, you don't have to go through things alone anymore.
+</p>
+
+<p class="type">
+I'm here, and I'm not going anywhere.
+</p>
+
+</div>
+
+<div class="section">
+
+<p class="type">Lately you've been appearing in my dreams a lot.</p>
+
+<p class="type">And honestly… I really like that.</p>
+
+</div>
+
+<div class="section">
+
+<p class="type">I want to share so many little moments with you.</p>
+
+<p class="type">
+Late-night gaming together. Cooking for you whenever you're hungry.
+Watching sunsets. Movie nights.
+Irritating you way too much.
+And creating a million memories.
+</p>
+
+</div>
+
+<div class="section">
+
+<p class="type">
+We reached a point where we say “I love you” to each other.
+</p>
+
+<p class="type">
+And I don't say those words lightly. I only say them to you.
+</p>
+
+</div>
+
+<div class="section">
+
+<p class="type">
+Last night when I fell asleep on call with you, I asked you not to leave.
+</p>
+
+<p class="type">And you stayed.</p>
+
+<p class="type">
+That small moment made me feel incredibly safe and secure.
+</p>
+
+</div>
+
+<div class="section">
+
+<p class="type">I want to make you feel safe.</p>
+
+<p class="type">I want to make you feel loved.</p>
+
+<p class="type">And I want to be someone you can always rely on.</p>
+
+<p class="type">I'm going to love you unconditionally.</p>
+
+</div>
+
+<div class="section">
+
+<p class="type">
+Long distance can feel scary sometimes.
+</p>
+
+<p class="type">
+But somehow… with you, it doesn't feel scary at all.
+</p>
+
+<h1>So Nandini…</h1>
+
+<h1>Will you be my girlfriend? ❤️</h1>
+
+<button class="yes" onclick="yes()">YES</button>
+<button class="no" onclick="move()">NO</button>
+
+</div>
+
+<script>
+
+function playMusic(){
+document.getElementById("song").src="https://www.youtube.com/embed/8h1Yy0uH2N0?autoplay=1&loop=1&playlist=8h1Yy0uH2N0";
+}
+
+function typeWriter(element,text,i=0){
+if(i<text.length){
+element.innerHTML+=text.charAt(i);
+setTimeout(()=>typeWriter(element,text,i+1),30);
+}
+}
+
+document.querySelectorAll(".type").forEach(el=>{
+let text=el.innerText;
+el.innerText="";
+setTimeout(()=>typeWriter(el,text),500);
+});
+
+function createHeart(){
+const heart=document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(Math.random()*3+2)+"s";
+document.body.appendChild(heart);
+
+setTimeout(()=>{heart.remove();},5000);
+}
+
+function yes(){
+document.body.innerHTML="<h1>Nandini ❤️</h1><h2>You just made Kira the happiest person alive.</h2><p>I promise I'll keep making you smile.</p>";
+setInterval(createHeart,200);
+}
+
+function move(){
+var button=document.querySelector('.no');
+button.style.position='absolute';
+button.style.top=Math.random()*80+'%';
+button.style.left=Math.random()*80+'%';
+}
+
+const sections=document.querySelectorAll('.section');
+
+window.addEventListener('scroll',()=>{
+sections.forEach(sec=>{
+const top=sec.getBoundingClientRect().top;
+if(top<window.innerHeight-100){
+sec.classList.add('show');
+}
+});
+});
+
+</script>
+
+</body>
+</html>
